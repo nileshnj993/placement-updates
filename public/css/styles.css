@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+
+#subheading{
+    margin-bottom: 40px;
+}
+
+a{
+  color:#000;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:hover{
+  color:white;
+}
+
+#name{
+  color: #efefef;
+  font-weight: 1400;
+}
+
+#name:hover{
+  color: #efefef;
+  font-weight: 1400;
+}
+
+#credits{
+    color: #efefef;
+    font-weight: 1400;
+    font-size: medium;
+    text-align: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+}
+
+#loading {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#loading img {
+  height: inherit;
+  width: inherit;
+}
+
+.job {
+  margin: 20px 0;
+  padding: 15px 25px;
+  background: #333;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.job h3 {
+  font-size: 25px;
+  color: #ffd700;
+}
+
+.job li {
+  margin: 5px 0;
+}
+
+.job .tags {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background: #336594;
+  color: #fff;
+}
