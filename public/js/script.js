@@ -1,10 +1,10 @@
-// const blogs = document.getElementById("blogs");
+
 const loadingGif = document.getElementById("loading");
 let loading = false;
 const footer = document.getElementById("footer");
 
 const getJobsFromBackend = async()=>{
-    loading = true; // enable loading gif until videos are fetched
+    loading = true; // enable loading gif until jobs are fetched
     const res = await fetch('https://placement-updates-mit.herokuapp.com/jobs');
     const data = await res.json();
     
