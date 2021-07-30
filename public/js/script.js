@@ -22,7 +22,7 @@ const addJobsToFrontEnd = async()=>{
         const div = document.createElement('div');
         div.className = 'job';
         div.innerHTML = `
-            <h3> ${job.title}</h3>
+            <h3>${job.title}</h3>
             <ul>
                 <li><strong> Deadline: </strong> ${job.date}</li>
                 <li><strong> OT Schedule: </strong> ${job.ot}

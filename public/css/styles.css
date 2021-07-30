@@ -10,37 +10,63 @@ ul {
   list-style: none;
 }
 
+#footer{
+  text-align: center;
+}
+
+#footer .socials-media ul li {
+  margin-right: 0;
+  margin-left: 0;;
+  float: none;
+  display: inline-block;
+}
 
 #subheading{
     margin-bottom: 40px;
 }
 
-a{
-  color:#000;
+#linkJob{
+  color: #ffffff;
+  text-decoration: none !important;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#linkJob:hover{
+  transition: all 0.5s ease-in-out 0s;
+  color: black;
   font-weight: bolder;
-  text-decoration: none;
 }
 
-a:hover{
-  color:white;
+a{
+  color: #ffffff;
+  text-decoration: none !important;
+  transition: all 0.5s ease-in-out 0s;
 }
 
-#name{
-  color: #efefef;
-  font-weight: 1400;
-}
 
-#name:hover{
-  color: #efefef;
-  font-weight: 1400;
-}
 
+a:hover {
+  transition: all 0.5s ease-in-out 0s;
+  color: black;
+  font-weight: bolder;
+}
 #credits{
-    color: #efefef;
-    font-weight: 1400;
-    font-size: medium;
-    text-align: center;
+  color: #efefef;
+  font-weight: 1400;
+  font-size: medium;
+  text-align: center;
 }
+a:hover,
+a:focus {
+  color: #ff5278;
+  text-decoration: underline;
+  font-weight: bolder;
+  border-bottom: #77dd77 solid 0px;
+}
+
+
+
+
 
 body {
   font-family: 'Montserrat', sans-serif;

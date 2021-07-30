@@ -5,23 +5,7 @@ const path = require('path');
 
 const app = express();
 
-// init client
-
 const getJobs = require('./utils/notions');
-
-
-// (async ()=>{
-//     const newBlogs = await getBlogs();
-//     console.log(newBlogs);
-// })();
-
-// can use to list all databases and see properties like database id etc.
-// const listDatabases = async()=>{
-//     const res = await notion.databases.list();
-//     console.log(res);
-// }
-
-// listDatabases();
 
 app.use(express.json());
 
@@ -36,3 +20,16 @@ app.get('/jobs', async (req,res)=>{
 app.listen(PORT, (req,res)=>{
     console.log("Running on port", PORT);
 })
+
+// (async ()=>{
+//     const newBlogs = await getBlogs();
+//     console.log(newBlogs);
+// })();
+
+// can use to list all databases and see properties like database id etc.
+// const listDatabases = async()=>{
+//     const res = await notion.databases.list();
+//     console.log(res);
+// }
+
+// listDatabases();
