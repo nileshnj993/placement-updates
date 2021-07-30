@@ -9,6 +9,10 @@ const database_id = process.env.NOTION_DB_ID;
 const getJobs = async()=>{ // get list of upcoming jobs
     const myJobs = await notion.databases.query({
         database_id,
+        sorts:[{
+            property: "Date",
+            direction: "ascending"
+        }]
         // filter:{
         //     property:"Tags",
         //     text:{
