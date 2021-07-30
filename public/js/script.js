@@ -30,7 +30,7 @@ const addJobsToFrontEnd = async()=>{
                 <li><strong> Description: </strong> ${job.description}</li>
                 <li><strong> CTC: </strong> ${job.ctc}</li>
             </ul>
-            <a id="linkJob" href = ${job.url}> <div id="url" class="tags"> Apply now!</div></a>`
+            <a id="linkJob" href = ${job.url} target="_blank"> <div id="url" class="tags"> Apply now!</div></a>`
         jobsList.appendChild(div);
     })
 }
