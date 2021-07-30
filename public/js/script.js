@@ -4,9 +4,9 @@ let loading = false;
 
 const getJobsFromBackend = async()=>{
     loading = true; // enable loading gif until videos are fetched
-    const res = await fetch('http://localhost:8000/jobs',{
+    const res = await fetch('https://placement-updates-mit.herokuapp.com/jobs',{
         mode:'no-cors'
-    });
+    }); 
   
     const data = await res.json();
     
