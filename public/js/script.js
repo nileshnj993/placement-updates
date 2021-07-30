@@ -1,13 +1,11 @@
 // const blogs = document.getElementById("blogs");
 const loadingGif = document.getElementById("loading");
 let loading = false;
+const footer = document.getElementById("footer");
 
 const getJobsFromBackend = async()=>{
     loading = true; // enable loading gif until videos are fetched
-    const res = await fetch('https://placement-updates-mit.herokuapp.com/jobs',{
-        mode:'no-cors'
-    }); 
-  
+    const res = await fetch('https://placement-updates-mit.herokuapp.com/jobs');
     const data = await res.json();
     
     loading = false;
@@ -19,6 +17,7 @@ const addJobsToFrontEnd = async()=>{
     const jobs = await getJobsFromBackend();
     if(!loading){
         loadingGif.innerHTML = '';
+        footer.style['display'] = 'block';
     }
     jobs.forEach((job)=>{
         const div = document.createElement('div');
@@ -31,7 +30,7 @@ const addJobsToFrontEnd = async()=>{
                 <li><strong> Description: </strong> ${job.description}</li>
                 <li><strong> CTC: </strong> ${job.ctc}</li>
             </ul>
-            <div id="url" class="tags"> <a id="linkJob" href = ${job.url}> Apply now!</div>`
+            <a id="linkJob" href = ${job.url}> <div id="url" class="tags"> Apply now!</div></a>`
         jobsList.appendChild(div);
     })
 }
