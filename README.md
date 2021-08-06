@@ -2,7 +2,7 @@
 With placement season approaching, the students of MIT, Manipal were having to rely on Whatsapp messages for updates on companies, and the offers provided. This naturally led to multiple occasions where I almost missed out on filling the application forms for a few companies, and had to swipe up through a ton of messages to find the links.
 
 
-This motivated me to make a simple web-app, that displays the list of companies that have come so far, or will be coming soon. 
+The experience motivated me to make a simple web-app, that displays the list of companies that have come so far, or will be coming soon. 
 
 **The details provided include:**
 1) Company Name
