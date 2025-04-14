@@ -17,7 +17,7 @@ I made use of Node.js and ExpressJS for the backend, and simple HTML, CSS and JS
 
 [Notion](https://www.notion.so/) is a new editor that blends notes, tasks, wikis in one app, and helps me remain organized. I made use of the [Notion API](https://developers.notion.com/reference) to utilize my Notion calendar as a data source for the job updates. This makes life very easy. All I need to do when a new job offer arrives is - open the Notion app on my phone, add an entry on the calendar with the required data, and voila! The website automatically fetches the now updated data.
 
-You can access the web-app at **[Placements MIT Manipal](https://placement-updates-mit.herokuapp.com/).**
+The application was deployed using Heroku during the placement season at Manipal in 2022. It has now been taken down to avoid extra costs.
 
 ---
 **Some Limitations include:**
